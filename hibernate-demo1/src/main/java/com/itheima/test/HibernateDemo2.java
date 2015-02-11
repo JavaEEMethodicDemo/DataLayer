@@ -10,7 +10,9 @@ import com.itheima.domain.Person;
 import com.itheima.util.HibernateUtil;
 
 public class HibernateDemo2 {
-	//使用QUery接口进行带条件的查询
+	/**
+	 * 1. 使用QUery接口进行带条件的查询
+	 */
 	@Test
 	public void testQuery1(){
 		Session session = null;
@@ -29,7 +31,9 @@ public class HibernateDemo2 {
 				session.close();
 		}
 	}
-	//使用QUery接口进行带条件的查询
+	/**
+	 * 2. 使用QUery接口进行带条件的查询
+	 */
 	@Test
 	public void testQuery2(){
 		Session session = null;
@@ -57,7 +61,9 @@ public class HibernateDemo2 {
 				session.close();
 		}
 	}
-	//使用QUery接口进行带条件的查询:返回结果只有一条
+	/**
+	 * 3. 使用QUery接口进行带条件的查询:返回结果只有一条
+	 */
 	@Test
 	public void testQuery3(){
 		Session session = null;
@@ -81,7 +87,9 @@ public class HibernateDemo2 {
 		}
 	}
 	
-	//使用QUery接口进行带条件的查询:分页查询。数据库无关，不用换。
+	/**
+	 * 4. 使用QUery接口进行带条件的查询:分页查询。数据库无关，不用换。
+	 */
 	@Test
 	public void testQuery4(){
 		Session session = null;

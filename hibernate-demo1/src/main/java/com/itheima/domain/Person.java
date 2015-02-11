@@ -12,7 +12,7 @@ create table PERSON(
 );
  */
 public class Person implements Serializable {
-	private Integer id;//¾¡Á¿Ê¹ÓÃ°ü×°ÀàÐÍ
+	private Integer id;//ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã°ï¿½×°ï¿½ï¿½ï¿½ï¿½
 	private String name;
 	private Date birthday;
 	private String gender;
@@ -44,7 +44,7 @@ public class Person implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", birthday=" + birthday
+		return "Person [id=" + id + ", name=" + name + ", birthday=" + birthday+ ", gender=" + gender
 				+ "]";
 	}
 	

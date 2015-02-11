@@ -6,7 +6,7 @@ import org.hibernate.Transaction;
 import com.itheima.util.HibernateUtil;
 
 public class HibernateTemplate {
-	//±ê×¼µÄHibernate±àÂëÄ£°å
+	//ï¿½ï¿½×¼ï¿½ï¿½Hibernateï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
 	public static void main(String[] args) {
 		Session session = null;
 		Transaction tx = null;

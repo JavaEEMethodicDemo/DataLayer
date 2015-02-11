@@ -139,17 +139,7 @@ public class HibernateDemo1 {
 		session.close();
 		sessionFactory.close();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	//方式一：Query接口，投影查询
 	@Test
