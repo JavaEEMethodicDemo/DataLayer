@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.itheima.domain">
+	<!-- 加入：mutable="false"等同所有的字段进行更新时，都被忽略 -->
+	<class name="Student" table="STUDENT" >
+		<!-- 定义联合主键 -->
+		<composite-id>
+			<key-property name="firstName" column="FIRST_NAME"></key-property>
+			<key-property name="secondName" column="SECOND_NAME"></key-property>
+		</composite-id>
+		<!-- insert=false,插入数据时，忽略此字段 
+			 update="false",更新数据时，忽略此字段
+		-->
+		<property name="gender" column="GENDER"></property>
+	</class>
+</hibernate-mapping>
