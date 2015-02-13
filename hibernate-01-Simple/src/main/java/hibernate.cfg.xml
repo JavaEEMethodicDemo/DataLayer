@@ -4,6 +4,8 @@
 	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
+		<!-- 讲session与线程绑定，使用ThreadLocal -->
+		<property name="hibernate.current_session_context_class">thread</property>
 		<!-- 配置数据源 -->
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql:///simple?characterEncoding=utf-8</property>
@@ -32,9 +34,12 @@
 		<property name="hibernate.connection.autocommit">false</property>
 		
 		<!-- 告知框架：映射文件在哪里 
-		<mapping resource="com/itheima/domain/.hbm.xml"/> -->
-		<mapping resource="com/itheima/domain/stutea/Student.hbm.xml"/>
-		<mapping resource="com/itheima/domain/stutea/Teacher.hbm.xml"/>
+		<mapping resource="com/gfyy/domain/.hbm.xml"/>
+		 -->
+		<mapping resource="com/gfyy/domain/empdep/Department.hbm.xml"/>
+		<mapping resource="com/gfyy/domain/empdep/Employee.hbm.xml"/>
+		<mapping resource="com/gfyy/domain/stutea/Student.hbm.xml"/>
+		<mapping resource="com/gfyy/domain/stutea/Teacher.hbm.xml"/>
 		
 	</session-factory>
 </hibernate-configuration>

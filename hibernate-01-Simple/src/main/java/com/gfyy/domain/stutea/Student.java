@@ -1,4 +1,4 @@
-package com.itheima.domain.stutea;
+package com.gfyy.domain.stutea;
 
 import java.io.Serializable;
 import java.util.HashSet;
